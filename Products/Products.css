@@ -1,0 +1,352 @@
+body {
+    background-color: #F8F9FA;
+}
+
+.Body {
+    display        : flex;
+    justify-content: center;
+}
+
+.Plain_body {
+    width: 80%;
+}
+
+.Url_body {
+    width          : 35%;
+    display        : flex;
+    justify-content: space-evenly;
+}
+
+.Url_body p {
+    margin: 0;
+}
+
+.Url_body a {
+    color          : #A8A9AA;
+    text-decoration: none;
+}
+
+.Url_body a:hover {
+    color      : #49A069;
+    font-weight: bolder;
+}
+
+.main_body {
+    width        : 100%;
+    height       : 587px;
+    background   : #FFFFFF;
+    box-shadow   : 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding      : 55px 0 0 0;
+    margin-top   : 44px;
+    flex-wrap    : wrap;
+}
+
+.block,
+.money_body {
+    display: flex;
+}
+
+.money_body {
+    justify-content: flex-end;
+    align-items    : center;
+}
+
+.money_body p {
+    margin              : 0;
+    width               : 57px;
+    height              : 26px;
+    font-family         : Gotham Pro;
+    font-size           : 16px;
+    line-height         : 160%;
+    letter-spacing      : 0.02em;
+    text-decoration-line: line-through;
+    color               : #CE1212;
+    margin-right        : 20px;
+}
+
+.money_body b {
+    margin-right  : 30px;
+    width         : 88px;
+    height        : 38px;
+    font-family   : Gotham Pro;
+    font-weight   : 900;
+    font-size     : 24px;
+    line-height   : 160%;
+    letter-spacing: 0.02em;
+    color         : #000000;
+}
+
+
+.money_body button {
+    margin-right  : 100px;
+    width         : 170px;
+    height        : 50px;
+    background    : #49A069;
+    border-radius : 100px;
+    /* Button text */
+    color         : #FFFFFF;
+    font-family   : Gotham Pro;
+    font-weight   : bold;
+    font-size     : 16px;
+    line-height   : 160%;
+    text-align    : center;
+    letter-spacing: 0.02em;
+}
+
+.title h1 {
+    width         : 100%;
+    height        : 38px;
+    font-family   : Gotham Pro;
+    font-weight   : bold;
+    font-size     : 24px;
+    line-height   : 160%;
+    letter-spacing: 0.02em;
+    color         : #000000;
+}
+
+h1 {
+    margin: 0;
+}
+
+.Title_body {
+    width: 100%;
+}
+
+.img_body img {
+    width              : 400px;
+    margin        : 0 20px 0 89px;
+    height: 500px;
+    transition-duration: 0.1s;
+}
+
+.img_body img:focus {
+    width: 180%;
+}
+
+.milk {
+    display        : flex;
+    margin-top     : 25px;
+    justify-content: space-between;
+    width          : 75%;
+    align-items    : flex-start;
+}
+
+.milk p {
+    width         : 470px;
+    font-family   : Gotham Pro;
+    font-size     : 16px;
+    line-height   : 160%;
+    letter-spacing: 0.02em;
+    margin        : 0 0 0 0;
+    color         : #000000;
+}
+
+.Url_body {
+    margin-top: 45px;
+}
+
+@media (min-width:0) and (max-width:429.9px) {
+    .Plain_body {
+        width: 100%;
+    }
+
+    .Url_body p{
+        font-size: 11px;
+    }
+
+    .Url_body {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .img_body {
+        display        : flex;
+        justify-content: center;
+    }
+
+    .title h1 {
+        font-size : 14px;
+        text-align: center;
+    }
+
+    .img_body img {
+        width : 60%;
+        margin: 0;
+    }
+
+    .block {
+        flex-direction: column;
+    }
+
+    .milk img {
+        margin: 0 0 0 20px;
+    }
+
+    .milk {
+        width : 95%;
+        margin: 15px 0 0 0;
+    }
+
+    .milk p {
+        width: 85%;
+        margin: 0 0 0 15px;
+    }
+
+    .main_body {
+        height       : 90%;
+        padding      : 20px 0 10px 0;
+        margin-bottom: 40px;
+    }
+
+    .money_body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0 0 0;
+    }
+
+    .money_body button {
+        display: none;
+    }
+
+    .money_body p {
+        width     : 100%;
+        text-align: center;
+        font-size : 12px;
+    }
+
+    .money_body b {
+        width          : 90%;
+        height         : 40px;
+        background     : #49A069;
+        border-radius  : 100px;
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+        cursor         : pointer;
+        color          : #ffffff;
+        margin: 0;
+    }
+}
+
+@media (min-width:430px) and (max-width:699.9px){
+    .block{
+        flex-direction: column;
+    }
+
+    .main_body{
+        height: 90%;
+    }
+
+    .img_body{
+        display: flex;
+        justify-content: center;
+    }
+
+    .img_body img{
+        width: 80%;
+        margin: 0;
+    }
+
+    .Url_body{
+        width: 100%;
+    }
+    .title h1{
+        text-align: center;
+    }
+
+    .milk{
+        width: 100%;
+    }
+
+    .milk img{
+        margin:  0 15px;
+    }
+
+    .money_body{
+        flex-direction: column;
+    }
+    .money_body button{
+        margin: 0;
+    }
+    .money_body b{
+        margin: 0;
+    }
+    .money_body p{
+        margin: 0;
+    }
+    .milk p{
+        width: 100%;
+        margin-right: 10px;
+    }
+}
+
+@media (min-width:700px) and (max-width:1151.9px){
+    .block{
+        flex-direction: column;
+    }
+
+    .main_body{
+        height: 90%;
+    }
+
+    .img_body{
+        display: flex;
+        justify-content: center;
+    }
+
+    .img_body img{
+        width: 40%;
+        margin: 0;
+    }
+
+    .Url_body{
+        width: 55%;
+    }
+    .title h1{
+        text-align: center;
+    }
+
+    .milk{
+        width: 100%;
+    }
+
+    .milk img{
+        margin:  0 15px;
+    }
+
+    .money_body{
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+    .money_body button{
+        margin: 0;
+        font-size: 20px;
+        width: 250px;
+    }
+    .money_body b{
+        margin: 0;
+    }
+    .money_body p{
+        margin: 0;
+    }
+    .milk p{
+        width: 100%;
+        margin-right: 40px;
+    }
+}
+
+@media (min-width:1152px) and (max-width:1300px){
+    .milk img{
+        margin: 0 15px 0 0;
+    }
+
+    .money_body{
+        margin-top: 2rem;
+    }
+
+    .Url_body{
+        width: 35%;
+    }
+}

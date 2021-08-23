@@ -1,0 +1,93 @@
+.Call {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    width         : 280px;
+    height        : 32px;
+    font-family: Gotham Pro;
+    font-weight: 900;
+    font-size  : 20px;
+    line-height: 160%;
+}
+
+.Send{
+    width: 280px;
+    height: 50px;
+    background: #49A069;
+    border-radius: 100px;
+    color: #ffff;
+}
+.Send:active, .Send:focus, .Send, .tel input, .name input{
+    outline: none;
+    border: none;
+}
+
+.inp, .tel, .name, .Call_body{
+    display: flex;
+    align-items: center;
+}
+
+.inp{
+    flex-direction: column;
+}
+
+.tel, .name{
+    width: 280px;
+    height: 50px;
+    background: #F8F9FA;
+    border: 1px solid #DADBDC;
+    box-shadow: inset 0px 2px 6px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+.tel, .Send{
+   margin-top: 20px;
+}
+
+.name{
+    margin-top: 50px;
+}
+
+.tel input, .name input{
+    background-color: transparent;
+} 
+
+.img{
+    width: 280px;
+    height: 3px;
+}
+
+.Call_body{
+    justify-content: center;
+    margin: 22px 0 0 0;
+}
+
+.minus_body{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 20px 0 0;
+}
+
+.minus_body img{
+    width: 30px;
+    height: 30px;
+}
+@media(min-width:0) and (max-width:300px){
+    .tel , .name {
+        width: 95% !important;
+    }
+    .Send{
+        width: 95%;
+    }
+    .img{
+        width: 90%;
+    }
+    .minus_body img{
+        width: 20px;
+        height: 20px;
+    }
+    .Send{
+        margin-bottom: 30px;
+    }
+}

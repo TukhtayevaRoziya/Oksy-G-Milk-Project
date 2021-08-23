@@ -1,0 +1,159 @@
+.my_store {
+    background-image: url(./img/My_Store.png);
+    height          : 1252px;
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+}
+
+.my_store_Title_body {
+    display       : flex;
+    padding       : 85px 0 0 0;
+    align-items   : center;
+    flex-direction: column;
+}
+
+.my_store_Title {
+    font-weight   : 900;
+    font-size     : 40px;
+    text-align    : center;
+    letter-spacing: 0.08em;
+    color         : #FFFFFF;
+}
+
+.my_store_white_box {
+    width        : 1170px;
+    background   : #FFFFFF;
+    box-shadow   : 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top   : 50px;
+    padding-bottom: 3rem;
+}
+
+.img_body,
+.my_store_Title,
+.white_box_title,
+.white_box_text,
+.white_box_btn {
+    width: 100%;
+
+}
+
+.img_body {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    padding       : 35px 0 0 0;
+}
+
+.white_box_title {
+    font-weight: bold;
+    font-size  : 24px;
+    text-align : center;
+    margin     : 42px 0 0 0;
+}
+
+.white_box_text p,
+.white_box_title,
+.white_box_btn button,
+.my_store_Title {
+    font-family: Gotham Pro;
+    line-height: 160%;
+}
+
+.white_box_text p,
+.white_box_title,
+.white_box_btn button {
+    letter-spacing: 0.02em;
+}
+
+.white_box_text p,
+.white_box_title {
+    color: #000000;
+}
+
+.white_box_text p {
+    width    : 1110px;
+    height   : 484px;
+    font-size: 16px;
+}
+
+.white_box_text {
+    padding: 0 20px;
+}
+
+.white_box_btn {
+    display        : flex;
+    justify-content: space-evenly;
+}
+
+.white_box_btn button {
+    width           : 270px;
+    height          : 50px;
+    border          : 1px solid #49A069;
+    box-sizing      : border-box;
+    background-color: transparent;
+    outline         : none !important;
+    border-radius   : 100px;
+
+    /* Button text */
+
+    font-weight: bold;
+    font-size  : 16px;
+    text-align : center;
+    color      : #49A069;
+}
+
+@media (min-width:0) and (max-width:1240px) {
+    .my_store{
+        height: 100%;
+    }
+
+    .white_box_title{
+        margin-top: 24px;
+    }
+
+    .white_box_title h1{
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 12px;
+        width: 96%;
+
+    }
+    .my_store_Title_body {
+        padding: 32px 0 0 0;
+    }
+
+    .my_store_Title_body img {
+        width : 90%;
+        height: 3px;
+    }
+
+    .my_store_Title_body h1 {
+        font-size: 20px;
+    }
+
+    .my_store_white_box {
+        width : 90%;
+        margin: 20px;
+        height: 100%;
+        padding: 0 0 2rem 0;
+        margin-bottom: 1rem;
+    }
+
+    .white_box_text p {
+        width: 100%;
+        font-size: 12px;
+        height: 100%;
+    }
+
+    .img_body img{
+        width: 90%;
+    }
+
+    .white_box_btn button{
+        width: 90%;
+        height: 45px;
+    }
+
+}

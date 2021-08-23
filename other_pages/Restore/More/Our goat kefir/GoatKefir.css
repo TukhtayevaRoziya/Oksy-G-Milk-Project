@@ -1,0 +1,172 @@
+/* body */
+body {
+    background: #F8F9FA;
+}
+
+.body {
+    display        : flex;
+    justify-content: center;
+}
+
+.more {
+    width: 80%;
+}
+
+/* url */
+
+.Url_body {
+    width          : 40%;
+    display        : flex;
+    justify-content: space-evenly;
+}
+
+.Url_body p {
+    margin: 0;
+}
+
+.Url_body a {
+    color          : #A8A9AA;
+    text-decoration: none;
+}
+
+.Url_body a:hover {
+    color      : #49A069;
+    font-weight: bolder;
+}
+
+.Url_body {
+    margin-top: 45px;
+}
+
+/* block */
+.block {
+    width        : 1170px;
+    background   : #FFFFFF;
+    box-shadow   : 0px 0px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top   : 44px;
+    padding      : 37px 30px 20px 30px;
+    box-sizing: border-box;
+}
+
+.block_title {
+    width         : 100%;
+    height        : 38px;
+    font-family   : Arial, Helvetica, sans-serif;
+    font-style    : normal;
+    font-weight   : bold;
+    font-size     : 24px;
+    line-height   : 160%;
+    letter-spacing: 0.02em;
+    color         : #000000;
+    margin        : 0;
+}
+
+/* abc */
+
+.abc,
+.number {
+    margin-top: 20px;
+}
+
+.abc p,
+.number p {
+    font-family   : Arial, Helvetica, sans-serif;
+    font-style    : normal;
+    font-size     : 16px;
+    line-height   : 160%;
+    letter-spacing: 0.02em;
+    color         : #000000;
+}
+
+.abc p strong,
+.number p strong {
+    font-weight: 900;
+}
+
+/* number */
+
+.number {
+    margin-left: 30px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+@media (min-width:0) and (max-width:699.9px) {
+
+    /* body */
+    .more {
+        width: 100%;
+    }
+
+    /* url */
+    .Url_body p {
+        font-size: 11px;
+        padding-left: 10px;
+    }
+
+    .Url_body {
+        width    : 100%;
+    }
+
+    .Url_body a{
+        font-size: 10px;
+        padding: 0 10px 0 10px;
+    }
+
+    .block {
+        width: 100%;
+    }
+
+    .block_title {
+        width    : 100%;
+        height   : 100%;
+        font-size: 16px;
+    }
+
+    .abc p {
+        width         : 100%;
+        font-size     : 12px;
+    }
+
+    .number p {
+        width : 100%;
+        font-size  : 12px;
+    }
+}
+
+@media (min-width:700px) and (max-width:1151.9px) {
+
+    /* body */
+    .more {
+        width: 100%;
+    }
+
+    /* url */
+    .Url_body {
+        width: 85%;
+    }
+
+    /* block */
+    .block{
+        width: 100%;
+    }
+}
+
+@media (min-width:1152px) and (max-width:1300px) {
+
+    /* body */
+    .more {
+        width: 100%;
+    }
+
+    .Url_body {
+        width: 48%;
+    }
+    /* block */
+    .block{
+        width: 100%;
+    }
+}

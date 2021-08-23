@@ -1,0 +1,184 @@
+/* main <div> */
+body {
+    background-color: #F8F9FA;
+}
+
+.body {
+    display        : flex;
+    justify-content: center;
+}
+
+.Consulting_body {
+    width: 80%;
+}
+
+/* adres */
+.adress_body {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-around;
+    width          : 200px;
+}
+
+.adress_body a {
+    text-decoration: none;
+    color          : #DADBDC;
+}
+
+.adress_body h4 {
+    color: #262728;
+}
+
+.adress_body h4,
+.adress_body a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* page title */
+.title_body h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size     : 40px;
+    font-family   : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* blocks */
+.block_body {
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-between;
+    margin-bottom  : 50px;
+}
+
+.block_1 {
+    width        : 23%;
+    background   : #FFFFFF;
+    box-shadow   : 0px 0px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top   : 50px;
+}
+
+.block_1 img {
+    width: 100%;
+}
+
+/* title */
+.text1 {
+    display       : flex;
+    flex-direction: column;
+    align-items   : stretch;
+}
+
+.text1 h1 {
+    font-weight   : bolder;
+    font-size     : 16px;
+    line-height   : 160%;
+    text-align    : center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.text1 p {
+    margin: 0;
+    width         : 100%;
+    font-style    : normal;
+    font-size     : 16px;
+    line-height   : 160%;
+    text-align    : center;
+    padding       : 0 40px;
+    box-sizing    : border-box;
+    letter-spacing: 0.02em;
+    color         : #262728;
+}
+
+.title,
+.title2 {
+    box-sizing : border-box;
+    padding-top: 5px;
+    height     : 94px;
+}
+
+/* detail button */
+
+.Consulting_detail_btn_body {
+    display        : flex;
+    justify-content: center;
+}
+
+
+.Consulting_detail_btn {
+    transition-duration       : 0.6s;
+    transition-property       : all;
+    transition-timing-function: linear;
+    width                     : 90%;
+    height                    : 40px;
+    border                    : 1px solid #49A069;
+    border-radius             : 100px;
+    margin                    : 23px 0 30px 0;
+    display                   : flex;
+    align-items               : center;
+    justify-content           : center;
+    text-decoration           : none;
+    /* Button text */
+    color                     : #49A069;
+    font-family               : Gotham Pro;
+    font-weight               : bold;
+    font-size                 : 16px;
+    line-height               : 160%;
+    letter-spacing            : 0.02em;
+}
+
+.Consulting_detail_btn:hover {
+    background-color: #49A069;
+    font-weight     : bolder;
+    text-decoration : none;
+    color           : #FFFFFF;
+    border          : none;
+}
+
+@media (min-width:0) and (max-width:559.9px) {
+    .title_body h1 {
+        font-size: 20px;
+    }
+
+    /* block */
+    .block_body {
+        flex-direction: column;
+    }
+
+    .block_1 {
+        width: 100%;
+    }
+
+    /* title */
+    .title2{
+        height: 58px;
+    }
+    .title{
+        height: 80px;
+    }
+    .text1 p{
+        padding: 0 16px;
+    }
+}
+
+@media (min-width:560px) and (max-width:1092.9px){
+    .text1 p{
+        font-size: 10px;
+        padding: 0 15px;
+    }
+
+    .text1 h1{
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .title, .title2{
+        height: 66px;
+    }
+
+    .Consulting_detail_btn{
+        height: 30px;
+        font-size: 12px;
+    }
+}

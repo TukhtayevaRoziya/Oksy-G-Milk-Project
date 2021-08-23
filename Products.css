@@ -1,0 +1,205 @@
+.products {
+    /* background: #F8F9FA; */
+    padding-top: 85px;
+}
+
+.products_title_body {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+}
+
+.products_title {
+    width         : 100%;
+    height        : 64px;
+    font-family   : Gotham Pro;
+    font-weight   : 900;
+    font-size     : 40px;
+    line-height   : 160%;
+    text-align    : center;
+    letter-spacing: 0.08em;
+    color         : #262728;
+}
+
+.products_chiziq_img {
+    width : 60%;
+    height: 5px;
+}
+
+.Products_milk {
+    width          : 100%;
+    display        : flex;
+    justify-content: center;
+}
+
+.products_milk_block {
+    padding      : 33px 0 0 0;
+    margin       : 50px 15px 0 15px;
+    width        : 18%;
+    background   : #FFFFFF;
+    box-shadow   : 0px 0px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.products_milk_block h1 code {
+    color: #49A069;
+}
+
+.products_milk_block_title {
+    width         : 100%;
+    height        : 52px;
+    font-family   : Gotham Pro;
+    font-weight   : 900;
+    font-size     : 16px;
+    line-height   : 160%;
+    text-align    : center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color         : #262728;
+}
+
+.Products_milk_img_body {
+    display        : flex;
+    justify-content: center;
+}
+
+.Products_milk_detail_btn_body {
+    display        : flex;
+    justify-content: center;
+}
+
+.Products_milk_detail_btn {
+    transition-duration       : 0.6s;
+    transition-property       : all;
+    transition-timing-function: linear;
+    width                     : 90%;
+    height                    : 40px;
+    border                    : 1px solid #49A069;
+    border-radius             : 100px;
+    margin                    : 23px 0 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Button text */
+    color                     : #49A069;
+    font-family               : Gotham Pro;
+    font-weight               : bold;
+    font-size                 : 16px;
+    line-height               : 160%;
+    letter-spacing            : 0.02em;
+}
+
+.Products_milk_detail_btn:hover {
+    background-color: #49A069;
+    font-weight     : bolder;
+    text-decoration: none;
+    color           : #FFFFFF;
+    border          : none;
+}
+
+.Products_milk_all_products_btn_body{
+    display: flex;
+    justify-content: center;
+}
+
+.Products_milk_all_products_btn_body a {
+    transition-duration       : 0.6s;
+    transition-property       : all;
+    transition-timing-function: linear;
+    width         : 270px;
+    height        : 45px;
+    background    : #49A069;
+    border-radius : 100px;
+    margin : 50px 0 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Button text */
+    text-decoration: none;
+    font-family   : Gotham Pro;
+    font-weight   : bold;
+    font-size     : 16px;
+    line-height   : 160%;
+    text-align    : center;
+    letter-spacing: 0.02em;
+    color         : #FFFFFF;
+}
+
+.Products_milk_all_products_btn_body a:hover{
+    background: #FFFFFF;
+    color: #49A069;
+    border: 1px solid #49A069;
+}
+
+@media(min-width:0) and (max-width:559.9px){
+    .products{
+        padding-top: 32px;
+    }
+
+    .products_milk_block_title{
+        width: 100%;
+        font-size: 10px;
+        margin: 0;
+    }
+
+    .Products_milk{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Products_milk_img_body{
+        justify-content: center;
+    }
+    .Products_milk_img_body img{
+        width: 80%;
+    }
+    .products_title{
+        font-size: 20px;
+        height: 32px;
+    }
+
+    .products_milk_block{
+        width: 80%;
+        margin: 20px 0 0 0;
+    }
+
+    .Products_milk_detail_btn_a{
+        width: 100%;
+        border: 4px solid rgb(255, 145, 0);
+    }
+
+    .Products_milk_detail_btn{
+        width: 80%;
+    }
+
+    .products_chiziq_img{
+        height: 3px;
+    }
+
+    .Products_milk_all_products_btn_body button{
+        width: 80%;
+    }
+    .Products_milk_all_products_btn_body a{
+        width: 90%;
+    }
+}
+
+@media(min-width:560px) and (max-width:700px){
+    .Products_milk{
+        flex-wrap: wrap;
+    }
+    .products_milk_block{
+        width: 40%;
+        margin: 20px 10px 0 10px;
+    }
+}
+
+@media(min-width:701px) and (max-width:1250px){
+    .Products_milk{
+        flex-wrap: wrap;
+    }
+    .products_milk_block{
+        width: 40%;
+        margin: 20px 10px 0 10px;
+    }
+}
